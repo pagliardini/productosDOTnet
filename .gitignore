@@ -1,0 +1,36 @@
+# Build Folders
+bin/
+obj/
+
+# User-specific Files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+.vs/
+.idea/
+*.dbmdl
+Generated_Code/
+.vscode/
+
+# Logs
+*.log
+
+# Dependencies
+packages/
+*.nupkg
+*.snupkg
+
+# Configuration Files
+*.config
+*.specs
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.Spotlight-V100
+*.Trashes

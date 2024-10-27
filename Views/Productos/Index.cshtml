@@ -1,0 +1,341 @@
+﻿@model IEnumerable<Productos.Models.Producto>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdProducto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdProducto1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdProducto2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdProducto3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cantidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StockMinimo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrecioCosto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrecioVenta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrecioVenta1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrecioVenta2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrecioVenta3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdRubro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdMarca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Promocion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Compuesto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CantProm)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrecioProm)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaModificacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IvaEstado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IvaPorc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IvaImporte)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PorcUtilidad1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PorcUtilidad2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PorcUtilidad3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PorcUtilidad4)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImporteUtilidad1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImporteUtilidad2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImporteUtilidad3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImporteUtilidad4)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Imprimible)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdMarcasWeb)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StockReposicion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdTalle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdColor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Entero)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaCreacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoImpuesto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValorImpuesto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnidadMedida)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PesoKilo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImpuestoAlimentos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaVencimiento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdProveedor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdMoneda)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PorcDescuento1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PorcDescuento2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PorcDescuento3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImpDescuento1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImpDescuento2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImpDescuento3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pbruto)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdProducto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdProducto1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdProducto2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdProducto3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cantidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StockMinimo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrecioCosto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrecioVenta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrecioVenta1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrecioVenta2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrecioVenta3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdRubro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdMarca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Promocion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Compuesto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CantProm)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrecioProm)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaModificacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IvaEstado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IvaPorc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IvaImporte)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PorcUtilidad1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PorcUtilidad2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PorcUtilidad3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PorcUtilidad4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImporteUtilidad1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImporteUtilidad2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImporteUtilidad3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImporteUtilidad4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Imprimible)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdMarcasWeb)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StockReposicion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdTalle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdColor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Entero)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaCreacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoImpuesto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValorImpuesto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnidadMedida)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PesoKilo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImpuestoAlimentos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaVencimiento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdProveedor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdMoneda)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PorcDescuento1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PorcDescuento2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PorcDescuento3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImpDescuento1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImpDescuento2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImpDescuento3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pbruto)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
